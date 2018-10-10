@@ -6,6 +6,16 @@
 
 > Copy file contents to clipboard.
 
+## Installation
+
+```bash
+npm install --save file-clippy
+```
+
+```bash
+yarn add file-clippy
+```
+
 ## Usage
 
 ```js
