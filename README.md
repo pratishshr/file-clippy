@@ -19,9 +19,9 @@ yarn add file-clippy
 ## Usage
 
 ```js
-import { copy } from 'file-clippy';
+import clippy from 'file-clippy';
 
 let filepath = './someFile.txt';
 
-copy(filepath);
+clippy.copy(filepath);
 ```

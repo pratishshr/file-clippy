@@ -1,18 +1,24 @@
-// Sample Tests
-
 import { expect } from 'chai';
-import clipboardy from 'clipboardy';
 
-import { copy } from '../src';
-import * as file from '../src/file';
+import clippy from '../src';
 
-describe('copy', () => {
-  it('should copy file contents to clipboard', async () => {
-    const FILE_PATH = './README.md';
+const FILE_DATA = 'COPY ME!';
+const FILE_PATH = './test/sample.txt';
 
-    let fileContents = await file.getContents(FILE_PATH);
+describe('clippy', () => {
+  describe('copy', () => {
+    it('should copy file contents to clipboard', async () => {
+      await clippy.copy(FILE_PATH);
 
-    await copy(FILE_PATH);
-    expect(clipboardy.readSync()).to.equal(fileContents);
+      expect(await clippy.read()).to.equal(FILE_DATA);
+    });
+  });
+
+  describe('read', () => {
+    it('should read contents from the clipboard', async () => {
+      await clippy.copy(FILE_PATH);
+
+      expect(await clippy.read()).to.equal(FILE_DATA);
+    });
   });
 });
