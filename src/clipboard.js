@@ -6,7 +6,7 @@ const execute = util.promisify(exec);
 let commands = {
   copy: {
     darwin: filename => `pbcopy < ${filename}`,
-    linux: filename => `xclip ${filename}`,
+    linux: filename => `xclip -sel clip < ${filename}`,
     win32: filename => `type ${filename} | clip`
   },
   read: {
