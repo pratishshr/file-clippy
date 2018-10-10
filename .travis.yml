@@ -10,3 +10,5 @@ branches:
   only:
     - master
 cache: yarn
+before_script:
+  - sudo apt-get install xclip
