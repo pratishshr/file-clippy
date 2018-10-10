@@ -12,3 +12,5 @@ branches:
 cache: yarn
 before_script:
   - sudo apt-get install xclip
+  - 'if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then export DISPLAY=:99.0; fi'
+  - 'if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sh -e /etc/init.d/xvfb start; sleep 3; fi'
