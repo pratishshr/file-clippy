@@ -14,7 +14,7 @@ let commands = {
   read: {
     darwin: () => 'pbpaste',
     linux: () => 'xclip -o -sel clip',
-    win32: () => 'paste | command'
+    win32: () => 'paste'
   }
 };
 
