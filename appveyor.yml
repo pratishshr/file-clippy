@@ -13,8 +13,8 @@ matrix:
 build: off
 shallow_clone: true
 test_script:
-  - node --version
-  - npm --version
-  - npm test
+  - cmd: node --version
+  - cmd: npm --version
+  - cmd: npm test
 cache:
   - '%APPDATA%\npm-cache'
