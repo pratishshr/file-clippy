@@ -23,5 +23,6 @@ import clippy from 'file-clippy';
 
 let filepath = './someFile.txt';
 
-clippy.copy(filepath);
+clippy.copy(filepath); // Copy to clipboard
+clippy.read(); // Read data from clipboard
 ```
