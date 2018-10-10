@@ -2,9 +2,8 @@ os:
   - linux
 language: node_js
 node_js:
-  - '9'
+  - '10'
   - '8'
-  - '7'
   - '6'
 branches:
   only:
