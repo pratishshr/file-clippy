@@ -1,3 +1,5 @@
+require('util.promisify/shim')();
+
 import util from 'util';
 import { exec } from 'child_process';
 
