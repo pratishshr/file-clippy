@@ -1,6 +1,6 @@
 {
   "name": "file-clippy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Copy file contents to clipboard",
   "main": "build/lib.js",
   "module": "src/index.js",
