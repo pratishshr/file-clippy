@@ -1,16 +1,14 @@
+os:
+  - linux
 language: node_js
-
 node_js:
   - '9'
   - '8'
   - '7'
   - '6'
-
 branches:
   only:
     - master
-
 before_install:
   - sudo apt-get install xsel
-
 cache: yarn
