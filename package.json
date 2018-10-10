@@ -1,7 +1,7 @@
 {
-  "name": "js-setup",
-  "version": "1.0.0",
-  "description": "Setup files for creating JS libraries.",
+  "name": "file-clipboardy",
+  "version": "0.0.1",
+  "description": "Copy file contents to clipboard",
   "main": "build/lib.js",
   "module": "src/index.js",
   "author": "Pratish Shrestha <pratishshr@gmail.com>",
@@ -13,12 +13,14 @@
     "test:watch": "mocha --require babel-register --watch"
   },
   "keywords": [
-    "setup",
-    "js-setup"
+    "copy file contents to clipboard",
+    "clipboard",
+    "file contents",
+    "copy"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/pratishshr/js-setup"
+    "url": "https://github.com/pratishshr/file-clipboardy"
   },
   "devDependencies": {
     "babel-plugin-transform-runtime": "^6.23.0",
@@ -28,5 +30,8 @@
     "chai": "^4.1.2",
     "mocha": "^4.0.1",
     "webpack": "^3.8.1"
+  },
+  "dependencies": {
+    "clipboardy": "^1.2.3"
   }
 }
