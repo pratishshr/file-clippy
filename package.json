@@ -30,8 +30,5 @@
     "chai": "^4.1.2",
     "mocha": "^4.0.1",
     "webpack": "^3.8.1"
-  },
-  "dependencies": {
-    "clipboardy": "^1.2.3"
   }
 }

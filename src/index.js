@@ -1,6 +1,4 @@
-import clipboardy from 'clipboardy';
-
-import * as file from './file';
+import * as clipboard from './clipboard';
 
 /**
  * Copy file contents to clipboard.
@@ -9,9 +7,7 @@ import * as file from './file';
  * @returns {Promise}
  */
 async function copy(filename) {
-  let data = await file.getContents(filename);
-
-  return clipboardy.write(data);
+  return clipboard.copy(filename);
 }
 
 /**
@@ -20,7 +16,7 @@ async function copy(filename) {
  * @returns {Promise}
  */
 function read() {
-  return clipboardy.read();
+  return clipboard.read();
 }
 
 export default {
