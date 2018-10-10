@@ -10,4 +10,7 @@ branches:
   only:
     - master
 
+before_install:
+  - sudo apt-get install xsel
+
 cache: yarn
