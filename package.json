@@ -1,5 +1,5 @@
 {
-  "name": "file-clipboardy",
+  "name": "copy-clip",
   "version": "0.0.1",
   "description": "Copy file contents to clipboard",
   "main": "build/lib.js",
